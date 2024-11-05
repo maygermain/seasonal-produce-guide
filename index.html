@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Seasonal Produce Guide</title>
+</head>
+
+<body>
+    <header>
+        <h1>Seasonal Produce Guide</h1>
+    </header>
+
+    <main>
+        <p>Select a month to see what produce is seasonally available!*</p>
+        <!--Month Dropdown-->
+        <div class="filter">
+            <div class="dropdown">
+                <button class="dropbutton">Month &#11167;</button>
+                <div class="dropdown_content">
+                    <a class="dropdown_selection" id="january" role="button">January</a> <!--Winter-->
+                    <a class="dropdown_selection" id="february" role="button">February</a> <!--Winter-->
+                    <a class="dropdown_selection" id="march" role="button">March</a> <!--Spring-->
+                    <a class="dropdown_selection" id="april" role="button">April</a> <!--Spring-->
+                    <a class="dropdown_selection" id="may" role="button">May</a> <!--Early Summer-->
+                    <a class="dropdown_selection" id="june" role="button">June</a> <!--Early Summer-->
+                    <a class="dropdown_selection" id="july" role="button">July</a> <!--Summer-->
+                    <a class="dropdown_selection" id="august" role="button">August</a> <!--Summer-->
+                    <a class="dropdown_selection" id="september" role="button">September</a> <!--Early Fall-->
+                    <a class="dropdown_selection" id="october" role="button">October</a> <!--Fall-->
+                    <a class="dropdown_selection" id="november" role="button">November</a> <!--Fall-->
+                    <a class="dropdown_selection" id="december" role="button">December</a> <!--Winter-->
+                </div>
+            </div>
+        </div>
+        <!--Columns w/ seasonal produce listed-->
+        <h1>This is what's in season during the month of <div id="month"></div>
+        </h1>
+        <div class="grid">
+            <div class="grid-item1">
+                <h2>Fruits</h2>
+                <div id="seasonal-fruits">
+                    <!--insert list of fruit in season here-->
+                </div>
+            </div>
+            <div class="grid-item2">
+                <h2>Vegetables</h2>
+                <div id="seasonal-vegetables">
+                    <!--insert list of vegetables in season here-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Sources:</h2>
+        <p>The information on this page is based on <a
+                href="https://www.sobeys.com/en/articles/whats-season-guide-canadian-produce-west/">Sobeys' Seasonal
+                Food Guide for the Western Provinces</a> (Canada).</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
